@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
+/* Header container */
+.app-header {
+  background-color: var(--primary-color);
+  padding: 0.75rem 0;
+}
+
+/* Flex container for name and nav */
+.header-content {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Styling for the name */
+.header-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navigation container */
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Styling for the navigation links */
+.header-nav a {
+  color: #d8d8d8;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition:
+    opacity 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
 }
 
-.card {
-  padding: 2em;
+/* Remove margin from the first link */
+.header-nav a:first-child {
+  margin-left: 0;
 }
 
-.read-the-docs {
-  color: #888;
+/* Hover effect for navigation links */
+.header-nav a:hover {
+  opacity: 0.7;
+}
+
+.header-nav a.active {
+  color: var(--secondary-color);
+  font-weight: bold;
+  opacity: 1;
+}
+
+/* Main content area basic styling */
+.app-content {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
