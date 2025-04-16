@@ -28,6 +28,48 @@ td {
 
 hr {
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   width: 80%;
+}
+
+/* Media query for mobile devices (smaller than 768px) */
+@media (max-width: 768px) {
+  /* Make tables centered but preserve vertical stacking */
+  table {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+  }
+
+  /* Keep these styles to ensure cells stack vertically */
+  td,
+  th {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  /* Center table as a whole */
+  .table-wrapper,
+  div:has(> table) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Make github embed responsive */
+  div > a > img[alt="GitHub Streak"] {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 }
