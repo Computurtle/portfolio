@@ -1,16 +1,16 @@
-import { Routes, Route, NavLink } from "react-router-dom"; // Removed Outlet
+import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import { Home, Contact, NotFound, Projects, Resume } from "./pages";
-import { useState, useEffect } from "react"; // Import useState
+import { useState, useEffect } from "react";
+import headshot from "./assets/headshot.png";
 
 function App() {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false); // State for mobile nav
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
-  // Close mobile nav when clicking outside of it or when window is resized
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -42,7 +42,12 @@ function App() {
     <>
       <header className="app-header">
         <div className="header-content">
-          <div className="header-name">{"Joshua McCrystal"}</div>
+          <div className="header-identity">
+            <div className="header-avatar">
+              <img src={headshot} alt="Joshua McCrystal" />
+            </div>
+            <div className="header-name">{"Joshua McCrystal"}</div>
+          </div>
           <button
             className={`hamburger-menu ${isMobileNavOpen ? "open" : ""}`}
             onClick={toggleMobileNav}
@@ -71,7 +76,6 @@ function App() {
         </div>
       </header>
 
-      {/* Main content area where routed components will render */}
       <main className="app-content">
         <Routes>
           <Route path="/" element={<Home />} />

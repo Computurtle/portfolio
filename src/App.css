@@ -16,9 +16,37 @@
   align-items: center;
 }
 
+/* Styles for the identity section */
+.header-identity {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Avatar container and image styles */
+.header-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--secondary-color);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.header-avatar img {
+  width: 140%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Styling for the name */
 .header-name {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--secondary-color);
 }
