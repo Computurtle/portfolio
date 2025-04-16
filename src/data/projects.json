@@ -4,7 +4,7 @@
     "title": "Arc Moments",
     "description": "An applied student project to make a functional and modern WordPress website for a client as a group.",
     "tags": ["WordPress"],
-    "image": "src/assets/images/arc-moments.png",
+    "image": "projects/images/arc-moments.png",
     "links": {
       "website": "https://www.arcmoments.au"
     }
@@ -14,7 +14,7 @@
     "title": "Portfolio",
     "description": "This very portfolio, wow, so meta! A React + Vite project written in Typescript deployed on Vercel.",
     "tags": ["React", "Vite", "TypeScript"],
-    "image": "src/assets/images/portfolio.png",
+    "image": "projects/images/portfolio.png",
     "links": {
       "github": "https://github.com/Computurtle/portfolio"
     }
@@ -24,7 +24,7 @@
     "title": "Game of Life",
     "description": "Conways Game of Life built in Solar2D and written in Lua for a student project.",
     "tags": ["Lua", "Solar2D"],
-    "image": "src/assets/images/game-of-life.png",
+    "image": "projects/images/game-of-life.png",
     "links": {
       "github": "https://github.com/Computurtle/GameofLife"
     }
@@ -34,7 +34,7 @@
     "title": "Presidential Power",
     "description": "One Script Game Jam Submission. Gain supporters to retain your most powerful source, being president!",
     "tags": ["Unity", "C#"],
-    "image": "src/assets/images/presidential-power.png",
+    "image": "projects/images/presidential-power.png",
     "links": {
       "itchio": "https://computurtle.itch.io/presidential-power",
       "github": "https://github.com/Computurtle/one-script-jam-2020"
@@ -45,7 +45,7 @@
     "title": "Foxlings",
     "description": "TAFE Project. Save your 3 pups from the Hunters and make it back to the den safely!",
     "tags": ["Unity", "C#"],
-    "image": "src/assets/images/foxlings.png",
+    "image": "projects/images/foxlings.png",
     "links": {
       "itchio": "https://computurtle.itch.io/foxlings",
       "github": "https://github.com/Computurtle/foxlings-tafe"
@@ -56,7 +56,7 @@
     "title": "Sushi Packer",
     "description": "TAFE Project. Pack sushi as fast as you can without letting too many go by you.",
     "tags": ["Unity", "C#"],
-    "image": "src/assets/images/sushi-packer.png",
+    "image": "projects/images/sushi-packer.png",
     "links": {
       "itchio": "https://computurtle.itch.io/sushi-packer",
       "github": "https://github.com/Computurtle/sushi-packer"
