@@ -34,7 +34,6 @@ hr {
 
 /* Media query for mobile devices (smaller than 768px) */
 @media (max-width: 768px) {
-  /* Make tables centered but preserve vertical stacking */
   table {
     display: block;
     width: 90%;
@@ -43,7 +42,6 @@ hr {
     border-collapse: collapse;
   }
 
-  /* Keep these styles to ensure cells stack vertically */
   td,
   th {
     display: block;
@@ -57,7 +55,6 @@ hr {
     border-bottom: none;
   }
 
-  /* Center table as a whole */
   .table-wrapper,
   div:has(> table) {
     display: flex;
