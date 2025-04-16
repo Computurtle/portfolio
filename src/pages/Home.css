@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 h1 {
@@ -32,13 +33,12 @@ hr {
   width: 80%;
 }
 
-/* Media query for mobile devices (smaller than 768px) */
-@media (max-width: 768px) {
+/* Media query for mobile devices (smaller than 540px (to fix table centering issue)) */
+@media (max-width: 540px) {
   table {
     display: block;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-collapse: collapse;
   }
 
@@ -49,18 +49,6 @@ hr {
     text-align: center;
     padding: 1rem 0;
     border-bottom: 1px solid #ccc;
-  }
-
-  td:last-child {
-    border-bottom: none;
-  }
-
-  .table-wrapper,
-  div:has(> table) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
   }
 
   /* Make github embed responsive */
