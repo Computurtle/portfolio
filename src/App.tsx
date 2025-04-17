@@ -1,6 +1,6 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
-import { Home, Contact, NotFound, Projects, Resume } from "./pages";
+import { Home, NotFound, Projects } from "./pages";
 import { useState, useEffect } from "react";
 import headshot from "./assets/headshot.png";
 
@@ -38,6 +38,9 @@ function App() {
     };
   }, [isMobileNavOpen]);
 
+  const resumePdfUrl = "documents/Joshua_McCrystal_Resume.pdf";
+  const contactEmail = "contact@jmccrystal.dev";
+
   return (
     <>
       <header className="app-header">
@@ -66,12 +69,20 @@ function App() {
             <NavLink to="/projects" onClick={() => setIsMobileNavOpen(false)}>
               Projects
             </NavLink>
-            <NavLink to="/resume" onClick={() => setIsMobileNavOpen(false)}>
+            <a
+              href={resumePdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileNavOpen(false)} // Optional: Close mobile nav on click
+            >
               Resume
-            </NavLink>
-            <NavLink to="/contact" onClick={() => setIsMobileNavOpen(false)}>
+            </a>
+            <a
+              href={`mailto:${contactEmail}`}
+              onClick={() => setIsMobileNavOpen(false)} // Optional: Close mobile nav on click
+            >
               Contact
-            </NavLink>
+            </a>
           </nav>
         </div>
       </header>
@@ -80,8 +91,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
