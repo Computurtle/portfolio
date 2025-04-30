@@ -19,16 +19,15 @@ function Education() {
           <p className="institution">
             <i className="fas fa-building"></i> Edith Cowan University
           </p>
-          {/* Add description here if needed */}
         </div>
         <div className="key-learnings">
-          {/* Key learning bubbles */}
-          <span className="learning-bubble">Software Engineering</span>
           <span className="learning-bubble">Programming</span>
           <span className="learning-bubble">Algorithms</span>
           <span className="learning-bubble">Data Structures</span>
           <span className="learning-bubble">Databases</span>
           <span className="learning-bubble">Networking</span>
+          <span className="learning-bubble">Systems</span>
+          <span className="learning-bubble">Linux</span>
         </div>
 
         <div className="unit-results">
@@ -88,7 +87,7 @@ function Education() {
       </section>
 
       <section className="education-section older-education-section">
-        <h2>Older Education & Certificates</h2>
+        <h2>Other Education</h2>
         <div className="education-item">
           <div className="education-header">
             <h3>Certificate in Higher Education</h3>
@@ -101,9 +100,10 @@ function Education() {
             <i className="fas fa-building"></i> Edith Cowan University
           </p>
           <div className="key-learnings">
-            {/* Key learning bubbles */}
             <span className="learning-bubble">Academic Writing</span>
             <span className="learning-bubble">Research Skills</span>
+            <span className="learning-bubble">Math</span>
+            <span className="learning-bubble">Science</span>
           </div>
         </div>
         <div className="education-item">
@@ -118,7 +118,6 @@ function Education() {
             <i className="fas fa-building"></i> South Metropolitan TAFE
           </p>
           <div className="key-learnings">
-            {/* Key learning bubbles */}
             <span className="learning-bubble">Game Design</span>
             <span className="learning-bubble">Unity</span>
             <span className="learning-bubble">C#</span>
