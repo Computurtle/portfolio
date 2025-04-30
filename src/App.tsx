@@ -1,6 +1,6 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
-import { Home, NotFound, Projects } from "./pages";
+import { Home, NotFound, Projects, Education } from "./pages";
 import { useState, useEffect } from "react";
 import headshot from "./assets/headshot.png";
 
@@ -69,17 +69,20 @@ function App() {
             <NavLink to="/projects" onClick={() => setIsMobileNavOpen(false)}>
               Projects
             </NavLink>
+            <NavLink to="/education" onClick={() => setIsMobileNavOpen(false)}>
+              Education
+            </NavLink>
             <a
               href={resumePdfUrl}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setIsMobileNavOpen(false)} // Optional: Close mobile nav on click
+              onClick={() => setIsMobileNavOpen(false)}
             >
               Resume
             </a>
             <a
               href={`mailto:${contactEmail}`}
-              onClick={() => setIsMobileNavOpen(false)} // Optional: Close mobile nav on click
+              onClick={() => setIsMobileNavOpen(false)}
             >
               Contact
             </a>
@@ -91,6 +94,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -1,0 +1,143 @@
+.education-page {
+  padding: 0 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.education-page h1 {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.education-section {
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.1rem;
+  padding-bottom: 0.1rem;
+  /* Removed border-bottom from general rule */
+}
+
+.latest-education-section .education-header {
+  border-bottom: 2px solid rgba(100, 216, 168, 0.3); /* Apply border only to latest section header */
+}
+
+.education-page h2 {
+  color: var(--secondary-color);
+  margin: 0;
+  font-size: 1.5rem;
+  /* Added margin-bottom and padding-bottom for consistency with latest section header */
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.older-education-section h2 {
+  border-bottom: 2px solid rgba(100, 216, 168, 0.3); /* Apply border below the older education section title */
+}
+
+.education-page h3 {
+  color: var(--text-color);
+  padding-top: 1rem;
+  margin-bottom: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.older-education-section h3 {
+  padding-top: 0;
+}
+
+.education-years {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.institution {
+  color: var(--text-color);
+  /* Adjusted margin-top */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.key-learnings {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.learning-bubble {
+  background-color: rgba(100, 216, 168, 0.2); /* Secondary color with opacity */
+  color: var(--secondary-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.unit-results {
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.unit-results h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.unit-results table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.unit-results th,
+.unit-results td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+
+.unit-results th {
+  background-color: rgba(100, 216, 168, 0.1);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.unit-results tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.older-education-section .education-item {
+  margin-bottom: 2rem;
+  border-bottom: none;
+}
+
+.older-education-section .education-item:last-child {
+  margin-bottom: 0.5rem;
+}
+
+/* Add a top border to education items that are not the first child */
+.older-education-section .education-item + .education-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Add top border */
+  padding-top: 1.5rem; /* Add padding-top */
+}
+
+/* Basic icon styling - assumes a font icon library is used */
+[class^="fa-"],
+[class*=" fa-"] {
+  margin-right: 0.5rem;
+  color: var(--secondary-color); /* Or a slightly different accent color */
+}
